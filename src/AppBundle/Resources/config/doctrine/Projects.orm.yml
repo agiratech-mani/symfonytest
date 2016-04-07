@@ -1,0 +1,18 @@
+AppBundle\Entity\Projects:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\ProjectsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }
+    fields:
+        name:
+            type: string
+            length: 100
+        price:
+            type: decimal
+            scale: 2
