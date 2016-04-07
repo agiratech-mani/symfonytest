@@ -1,0 +1,11 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+homepage:
+    path:      /
+    defaults:  { _controller: AppBundle:Welcome:index }
+lucky:
+    path:      /number/{page}
+    defaults:  { _controller: AppBundle:Welcome:number, page:1}
+    requirements:
+        page:  \d+
